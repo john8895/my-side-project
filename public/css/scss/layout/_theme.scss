@@ -1,0 +1,31 @@
+@import "../helpers/variable";
+@import "../helpers/mixins";
+@import "../helpers/extends";
+
+// ======================================
+// Reset
+// ======================================
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    line-height: 1.2;
+    font-weight: 600;
+    color: $font-color1;
+}
+
+// ======================================
+// Common
+// ======================================
+body {
+    font-family: "Source Sans Pro", "Microsoft JhengHei", sans-serif;
+}
+
+
+a {
+    color: $first-color;
+    @include transition(.3s ease-in-out);
+
+    &:hover {
+        color: $font-color1;
+        text-decoration: none;
+    }
+}
+
